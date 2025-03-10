@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - ProtectVid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px;
+            padding-top: 60px; /* Pour compenser la barre de navigation fixe */
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: #ff6600;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        /* Contenu principal */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 36px;
+            color: #ff6600;
+        }
+        h2 {
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .service {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .service h3 {
+            color: #ff6600;
+        }
+        .service p {
+            font-size: 16px;
+            color: #666;
+        }
+        .cta {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 200px;
+            margin: 30px auto;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #e55d00;
+        }
+        .contact-info {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+            transition: transform 0.3s ease;
+        }
+        .contact-info:hover {
+            transform: translateY(-10px);
+        }
+        .contact-info h3 {
+            color: #ff6600;
+            margin-bottom: 10px;
+        }
+        .contact-info p {
+            font-size: 16px;
+            color: #666;
+        }
+        .contact-info ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .contact-info ul li {
+            margin-bottom: 10px;
+        }
+        .contact-info a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Formulaire de contact interactif */
+        .form-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-container button {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        .form-container button:hover {
+            background-color: #e55d00;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">ProtectVid</div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="video.html">Vidéos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="services.html">Nos Services</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Nos Services</h1>
+    
+    <div class="service">
+        <h3>1. Détection et suppression de vidéos inappropriées</h3>
+        <p>Nous offrons un service de détection et suppression rapide des vidéos inappropriées. Si vous trouvez une vidéo qui vous semble nuisible ou choquante, nous vous aidons à la faire retirer des plateformes en ligne. Notre équipe travaille en étroite collaboration avec les services de modération des grandes plateformes pour assurer une suppression dans les plus brefs délais.</p>
+    </div>
+    
+    <div class="service">
+        <h3>2. Assistance en cas d'arnaque à la webcam</h3>
+        <p>Si vous êtes victime d'une arnaque à la webcam, nous vous apportons notre soutien pour récupérer la vidéo compromettante et éviter sa diffusion. Nous vous guidons pour collecter les preuves nécessaires et contacter les autorités compétentes pour une enquête. Votre sécurité est notre priorité.</p>
+    </div>
+
+    <div class="service">
+        <h3>3. Aide contre le chantage et la diffusion de vidéos privées</h3>
+        <p>Nous intervenons rapidement en cas de chantage lié à une vidéo privée. Que vous soyez victime d'une extorsion, d'une menace de diffusion de vidéo intime, ou d'un contenu manipulé à des fins malveillantes, nous vous accompagnons dans le processus pour stopper la diffusion et traduire le responsable en justice.</p>
+    </div>
+
+    <div class="service">
+        <h3>4. Collaboration avec les autorités pour l'arrêt des suspects</h3>
+        <p>Nous travaillons en collaboration avec des autorités locales et internationales pour identifier, localiser et arrêter les suspects responsables de ces crimes. Grâce à notre réseau et à nos procédures, nous vous aidons à déposer plainte, recueillir des preuves et suivre l'avancement de l'enquête jusqu'à ce que les responsables soient arrêtés.</p>
+    </div>
+
+    <div class="service">
+        <h3>5. Conseils pour protéger vos données personnelles</h3>
+        <p>Au-delà de l'assistance dans la gestion des vidéos inappropriées, nous vous offrons des conseils pratiques pour protéger vos données personnelles en ligne. Nous vous apprenons à éviter les arnaques, à sécuriser vos comptes, et à comprendre les risques liés à l'utilisation des plateformes de partage vidéo.</p>
+    </div>
+
+    <div class="cta" onclick="window.location.href='contact.html'">
+        Contactez-nous pour de l'aide immédiate
+    </div>
+
+    <div class="contact-info">
+        <h3>Moyens de Contact</h3>
+        <p>Pour toute question ou pour signaler un problème, nous vous encourageons à utiliser les moyens de contact suivants :</p>
+        <ul>
+            <li><strong>Email du support :</strong> <a href="mailto:support@protectvid.com">support@protectvid.com</a></li>
+            <li><strong>Téléphone :</strong> +33 1 23 45 67 89</li>
+            <li><strong>Telegram :</strong> <a href="https://t.me/ProtectVidSupport">@ProtectVidSupport</a> (chat instantané)</li>
+        </ul>
+        <p>Nos équipes sont disponibles 24h/24 pour répondre à vos questions et vous accompagner dans vos démarches. Que vous soyez victime d'arnaque à la webcam, de chantage, ou de toute autre forme de contenu inapproprié, nous sommes là pour vous aider.</p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 ProtectVid. Tous droits réservés.</p>
+        <p><a href="privacy-policy.html">Politique de confidentialité</a> | <a href="terms-of-service.html">Conditions d'utilisation</a></p>
+    </div>
+</div>
+
+</body>
+</html>
